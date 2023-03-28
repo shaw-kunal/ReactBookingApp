@@ -1,0 +1,50 @@
+.pList
+{   width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+    
+}
+.pListItem
+{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+.pListImg
+{
+    width:100% ;
+    height: 155px;
+    border-radius: 4px;
+    object-fit: contain;
+    /* background-color: red; */
+    overflow: hidden;
+    transition: 1s;
+}
+.pListImg:hover
+{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); ;
+
+}
+
+
+
+.pTitle
+{
+    position: absolute;
+    top:9px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.pTitle>span
+{
+    margin:0px 6px 0px 3px;
+}
+
