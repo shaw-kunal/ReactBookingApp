@@ -1,6 +1,6 @@
 .pList
 {   width: 100%;
-    max-width: 1024px;
+    max-width: 80%;
     display: flex;
     justify-content: center;
     gap: 10px;

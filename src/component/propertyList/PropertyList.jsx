@@ -44,6 +44,14 @@ function PropertyList() {
                 </div>
 
             </div>
+            <div className="pListItem">
+                <img className='pListImg' src="https://cf.bstatic.com/xdata/images/xphoto/300x240/140018278.jpg?k=9d55980161ec78507cbfc75ba572b5256d3695228fe8e0d3589a45f481bfdc71&o=" alt="" />
+                <div className="pTitle">
+                    <span>Jaipur</span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAgVBMVEX///8AAAAAAAAAAAAAAAD////29vbo7Pfm6PTg5vTg5PLM2e7Gz+T1w5nAyuH1v5P0uoi2wt2zw+T0t4S0wNzzsnvysHn3rG2qtNqqs9nxp2rwomHwoV3unFjsl0/slUyLnciHmsd3jb8qm2MgmlkqlV8ellook10YlFUjj1gfjVULJqFEAAAABXRSTlMAESIzRJTdRHwAAACSSURBVHjardHLDoIwEIXhtlgQGctVvBVRqBR8/wd0FJuQdFyY+K9O5lsO+2ecDO+ajDOht0RngZCWXqlGaLKdV9YgtPVpbo99Zn1BkK4IIJIuhNDdiyQpnIQLALjeQBGQq65TOQHrI8BhQ4CMqyqWC7BmnDPGDG7aF/SDV39HmCiwbyCaEB5kgvFgRRTwrx/8vSeVOB6PJ+z3YAAAAABJRU5ErkJggg==" alt="" />
+                </div>
+
+            </div>
 
         </div>
     )

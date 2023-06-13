@@ -2,7 +2,7 @@
 .featured
 {
       width: 100%;
-    max-width: 1024px;
+    max-width: 80%;
     display: flex;
     gap:10px;
     justify-content: space-between;
@@ -15,16 +15,15 @@
     color: white;
     border-radius: 10px;
     overflow: hidden;
-    height: 250px;
-    
+    height:341px;
 }
 .featuredImg
 {  width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .featuredTitles
 { 
     position: absolute;
-    bottom:40px;
+    bottom:60px;
 }
 
