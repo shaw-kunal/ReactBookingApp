@@ -1,0 +1,50 @@
+.carouselContainer
+{ width: 100%;
+    max-width: 80%;
+    
+}
+
+.carouselImg
+{   
+    width: 100%;
+    height: 370px;
+    object-fit: contain;
+    transition: 2s ease;
+    border-radius: 22px;
+   
+
+}
+.carouselImg:hover
+{
+    filter: brightness(1.2);
+    transform: scale(0.95);
+    overflow: hidden;
+
+}
+
+
+.itemDesc .cname
+{
+    font-size: large;
+    font-weight: 600;
+}
+.crating .carouselbtn
+{   margin: 10px 10px 0 25px;
+    background-color: #121FCF;
+    color: white;
+    border: none;
+    padding:5px 15px;
+    border-radius: 4px;
+   margin-bottom: 15px;
+    
+
+}
+.crating > span
+{
+    color:  #f9a600;
+    font-size: large;
+}
+.starIcon
+{
+color:  #d8c49a;
+}

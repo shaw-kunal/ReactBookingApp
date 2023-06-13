@@ -1,0 +1,112 @@
+.hotelContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.hotelwrapper {
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.hotelDesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.hotelDesc .hotelDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hotelDesc .hotelDetails .locationIcon {
+  color: #109c12;
+  margin-right: 10px;
+}
+.hotelDesc .hotelDetails > span {
+  font-size: 1px;
+}
+.hotelDesc .hotelDetails .hotellocation {
+  color: #003580;
+  font-weight: 500;
+}
+
+.hotelDesc .hotelDetails .hotelfeature {
+  color: #109c12;
+  font-weight: 500;
+  font-size: 14px;
+}
+.hotelDesc .bookNow > button {
+  border: none;
+  background-color: #003580;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.hotelDesc .bookNow > button:hover {
+  filter: brightness(1.4);
+}
+
+/* now manges the images */
+.hotelImages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hotelImages .hotelImgWrapper {
+  width: 33%;
+}
+.hotelImages .hotelImgWrapper .hotelImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* now desing the img next */
+.hotelDetails {
+  display: flex;
+  gap: 10px;
+}
+.hotelDetails .hotelDeatilsText {
+  margin: 12px;
+  flex: 2;
+}
+
+.hotelDetails .hotelDeatilsText > h2 {
+  margin-bottom: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+.hotelDetails .hotelDeatilsprice {
+  background-color: #ebf3ff;
+  margin: 10px 0px 10px 0;
+  padding: 20px 20px 10px 30px;
+  border-radius: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.hotelDetails .hotelDeatilsprice p {
+  font-size: 29px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 12px;
+}
+
+.hotelDetails .hotelDeatilsprice .price {
+  font-size: 22px;
+}
+.hotelDetails .hotelDeatilsprice >button {
+    border: none;
+    background-color: #003580;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.hotelDetails .hotelDeatilsprice >button:hover{
+    filter: brightness(1.4);
+}
+

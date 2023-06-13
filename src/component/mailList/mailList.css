@@ -1,0 +1,38 @@
+.mailBox {
+  width: 100%;
+  background-color: #003580;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+  padding: 30px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.mailBox span {
+  font-size: 30px;
+}
+.mailInput {
+  display: flex;
+  gap: 20px;
+}
+
+.mailInput>input
+{
+    padding: 10px;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    
+
+}
+.mailInput>button
+{
+    background-color: #6893cf;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+} 
