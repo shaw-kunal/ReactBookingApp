@@ -1,30 +1,52 @@
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faCircleArrowLeft, faCircleArrowRight, faCircleXmark, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../../component/footer/Footer'
 import { Header } from '../../component/header/Header'
 import MailList from '../../component/mailList/MailList'
 import Navbar from '../../component/navbar/Navbar'
 import "./hotel.css"
 export const Hotel = () => {
+const [slideNumber, setSlideNumber] = useState(0);
+const [open, setopen] = useState(false);
+
+const handleArrow=(p)=>{
+  let newSlide ;
+  if(p==="l")
+  {
+   newSlide = slideNumber==0 ? 5:slideNumber-1;
+  }
+  else{
+    newSlide =( slideNumber==imgs.length-1)?0:slideNumber+1;
+  }
+  setSlideNumber(newSlide)
+
+}
+const handleImg=(i)=>{
+  setopen(true);
+  setSlideNumber(i);
+}
+
+
+
   const imgs = [
     {
       src: "https://cf.bstatic.com/xdata/images/hotel/square600/437155596.webp?k=659f5e9d3c1a5549333a71182e2f06909d60be10f3e88b30356ccc1b2aba17e0&o=&s=1"
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/square600/437155596.webp?k=659f5e9d3c1a5549333a71182e2f06909d60be10f3e88b30356ccc1b2aba17e0&o=&s=1"
+      src:"https://cf.bstatic.com/xdata/images/hotel/max1280x900/72796725.jpg?k=65ab3bbd7f44346ad97a830ae89951b8cc5a4a164fd3a07bd3f28944fc01296e&o=&hp=1"
     },
     {
       src: "https://cf.bstatic.com/xdata/images/hotel/square600/437155596.webp?k=659f5e9d3c1a5549333a71182e2f06909d60be10f3e88b30356ccc1b2aba17e0&o=&s=1"
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/square600/437155596.webp?k=659f5e9d3c1a5549333a71182e2f06909d60be10f3e88b30356ccc1b2aba17e0&o=&s=1"
+     src:"https://cf.bstatic.com/xdata/images/hotel/max300/282136945.webp?k=2f946ef37ad423cae516b82744484b54ddbe68293a623a11ab29fa0b58c41a2a&o="
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/square600/437155596.webp?k=659f5e9d3c1a5549333a71182e2f06909d60be10f3e88b30356ccc1b2aba17e0&o=&s=1"
+      src:"https://cf.bstatic.com/xdata/images/hotel/square600/445287292.webp?k=62f6c6ba4ef18b0c79c3fa2061e4a67cbb058035c8b0f4e2e74413ab659e9e1c&o="
     },
     {
-      src: "https://cf.bstatic.com/xdata/images/hotel/square600/437155596.webp?k=659f5e9d3c1a5549333a71182e2f06909d60be10f3e88b30356ccc1b2aba17e0&o=&s=1"
+      src:"https://cf.bstatic.com/xdata/images/hotel/square600/462511446.webp?k=a7d5a3b097bcb47b2aa457717cc9c21f81c353d738439ed9c996b225b0c548cb&o="
     }
   ]
   return (
@@ -32,6 +54,19 @@ export const Hotel = () => {
       <Navbar />
       <Header type="list" />
        <div className="hotelContainer">
+     {
+      open && 
+     <div className="slider">
+     <FontAwesomeIcon icon={faCircleXmark} className='cross' onClick={()=>setopen(false)}/>
+     <FontAwesomeIcon icon={faCircleArrowLeft}  className='arrow'onClick={()=>handleArrow("l")}/>
+     <div className="sliderWrapper">
+     <img src={imgs[slideNumber].src} alt="" className="sliderImg"  />
+     </div>
+     <FontAwesomeIcon icon={faCircleArrowRight}  className='arrow' onClick={()=>handleArrow("r")}/>
+
+     </div>
+     }
+
         <div className="hotelwrapper">
           <div className="hotelDesc">
             <div className="hotelDetails">
@@ -47,9 +82,9 @@ export const Hotel = () => {
 
           </div>
           <div className="hotelImages">
-            {imgs.map(img => (
+            {imgs.map((img ,i)=> (
               <div className="hotelImgWrapper">
-                <img src={img.src} alt="" className="hotelImg" />
+                <img onClick={()=>handleImg(i)} src={img.src} alt="" className="hotelImg" />
               </div>
 
 
@@ -72,8 +107,6 @@ export const Hotel = () => {
       <Footer/>
 
         </div>
-     
-   
       </div>
       
 

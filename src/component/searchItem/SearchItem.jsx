@@ -14,7 +14,7 @@ export default function SearchItem() {
 
     return (
         <div className="siItem">
-            <img src="https://cf.bstatic.com/xdata/images/hotel/square600/176104588.webp?k=9bcf0549c7fde3363eff6c0c82846995a5221aadc320ad494950b4ce39a45c8d&o=&s=1" alt="" className="searchImg" />
+            <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o=" alt="" className="searchImg" />
             <div className="siDesc">
                 <h1 className="siTitle">Fairfield by Marriott Goa Anjuna
                 </h1>

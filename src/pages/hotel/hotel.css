@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   margin: 10px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hotelwrapper {
@@ -60,7 +62,9 @@
 }
 .hotelImages .hotelImgWrapper .hotelImg {
   width: 100%;
+  height: 400px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 /* now desing the img next */
@@ -108,5 +112,48 @@
 
 .hotelDetails .hotelDeatilsprice >button:hover{
     filter: brightness(1.4);
+}
+.slider{
+  position: sticky;
+  top: 0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.258);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+}
+.sliderWrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.sliderImg{
+  width: 80%;
+  height:80vh ;
+/* transition: all 2s ease; */
+  object-fit: cover;
+
+}
+.cross{
+    right:20px;
+    top:20px;
+    font-size:30px;
+    color: rgb(179, 142, 142);
+    cursor: pointer;
+  position: absolute;
+}
+.arrow{
+margin:20px;
+font-size: 40px;
+color: rgb(171, 167, 167);
+cursor: pointer;
 }
 
